@@ -3,7 +3,18 @@
     border-right: 1px solid var(--twitter-background);
     /* min-width: fit-content; */
     overflow-y: scroll;
+
+    -ms-overflow-style: none; /* Hide scrollback on IE and Edge*/
+    scrollbar-width: none;  /* Hides scrollback on Firefox */
+
 }
+
+
+/* Hide scrollback on chrome, safari, and OPera */
+.feed::-webkit-scrollbar {
+    display: none;
+}
+
 
 .feed__header {
     position: sticky;
@@ -18,3 +29,4 @@
     font-size: 20px;
     font-weight: 800;
 }
+
